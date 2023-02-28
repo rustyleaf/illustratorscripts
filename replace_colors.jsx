@@ -23,15 +23,13 @@ function ReplaceColors() {
     //Get all the Paths and loop through them
     var paths = doc.pathItems;
     for( var i = 0, ii = paths.length; i < ii; i++ ) {
-        var curPath = paths[i];  
-        
+        var curPath = paths[i];          
 
         //If the current Color matches the replace Color then replace it.
         if (curPath.fillColor.red == colourToReplace.red && curPath.fillColor.green == colourToReplace.green && curPath.fillColor.blue == colourToReplace.blue)
         {
             curPath.fillColor = replacementColor;
-        }
-        // if not it must be the bottom color
+        }        
         else {
             //do nothing
         }
